@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20210611 과제</title>
+</head>
+<body>
+    <h1>로그인</h1>
+		<pre>
+			작성된 코드를 따라 써보면서 해석해보세요! 
+		
+			아이디 : user01
+			비밀번호 : pass01
+		</pre>
+
+    <form action="/hw1/login.do"   method="POST">
+    <!-- .do: 실제 존재하는 파일이 아닌 요청을 처리해줄 Servlet을 호출하는 가상주소파일 -->
+        <label for="memberId">ID</label>
+        <input type="text" name="memberId" id="memberId" size="20"> <br>
+
+        <label for="memberPw">PW</label>
+        <input type="password" name="memberPw" id="memberPw" size="20">
+
+        <button>로그인</button>
+        <!-- memberId, memberPw라는 이름으로 파라미터 전달(login.do라는 곳으로 요청보냄) -->
+        <!-- POST 방식의 이유는? 보안 요소때문. (get방식은 주소창에 정보 노출) -->
+    </form>    
+    
+</body>
+</html>
